@@ -1,0 +1,396 @@
+/* ---------------------------------
+           GooGle Font 
+---------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*-------------------------------------------------
+         Body and Section Area
+-------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin-top: 82px;
+  background-color: #ffff;
+  width: 1050px;
+  border-radius: 5px;
+}
+
+/*------------------------------------------
+            Navigation Bar 
+--------------------------------------- */
+
+nav {
+  background-color: #2d25a0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+nav ul li a::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.45s linear;
+}
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,
+label #close {
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*------------------------------------------------
+     Top Side , Top Banner , Live Website 
+----------------------------------------------- */
+.top {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #2d25a0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 7vh;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.top-side img {
+  width: 556.01px;
+  height: 438px;
+}
+a {
+  margin-left: 7vh;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 24px 10px 24px;
+}
+.button {
+  background-image: linear-gradient(45deg, #e02c6d, rgb(185, 15, 66));
+  font-size: 16px;
+  margin-top: 27px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  transform: scale(1.47);
+  background-image: linear-gradient(45deg, rgb(185, 7, 66), #e02c6d);
+}
+
+/*-----------------------------------------------------------
+                 Main Data and Player Id 
+ -------------------------------------------------------- */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px 30px;
+}
+h3 {
+  color: #18191f;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+}
+.player {
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.player:hover {
+  transform: scale(1.1);
+}
+
+.player .player-banner img {
+  width: 300px;
+  height: 256px;
+}
+
+/*----------------------------------------------------------
+        Media Section (YouTube Videos) 
+-------------------------------------------------------*/
+.media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 80px;
+  background-image: linear-gradient(
+      rgba(253, 251, 251, 0.712),
+      rgba(250, 249, 249, 0.986)
+    ),
+    url(images/massi1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*-------------------------------------------------------------------
+                      From or Sing Up 
+--------------------------------------------------------------- */
+.log-in {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 6, 6, 0.692)),
+    url(images/nwymar.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-indent: 10px;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  padding-left: 50px;
+}
+.input {
+  margin-bottom: 30px;
+  position: relative;
+}
+input,
+textarea {
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+  transition: 0.3s;
+}
+button {
+  border-radius: 50px;
+  padding: 10px 0;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------
+          Footer ( The end Part)
+------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%  
+  height: 0vh;
+}
+
+.logo img {
+  width: 483.87px;
+  height: 110px;
+  margin-top: 20px;
+}
+
+.icon a {
+  width: 170px;
+  height: 32px;
+  margin: 20px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 9px 16px;
+  border-radius: 30px;
+  color: gray;
+  background-color: rgba(199, 205, 209, 0.33);
+  margin-right: 14px;
+}
+.icon a i {
+  transition: 0.87s;
+}
+.icon a i:hover {
+  transform: rotate(360deg);
+}
+
+.copy-right {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 500px) {
+  /*--------------------- Navigation Bar ----------------------- */
+  label #btn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2d25a0;
+    top: 33px;
+    left: -130%;
+    text-align: center;
+    transition: all 0.65s ease-in-out;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    line-height: 50px;
+    padding: 0;
+  }
+  nav ul li a {
+    margin-right: 135px;
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #close {
+    display: block;
+  }
+
+  /* -------------------------------------ToP ------------------------------------ */
+  .top {
+    width: 100%;
+    height: 695px;
+  }
+  .top-side {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0;
+    margin-bottom: 30px 0px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .top-side img {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* --------------------------------Main ---------------------------------------- */
+  main {
+    width: 100%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    grid-gap: 0;
+  }
+  .container {
+    width: 330px;
+  }
+  .players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width: 100%  
+    height: 100vh;
+  }
+  .player {
+    margin-bottom: 40px;
+  }
+  .player-banner {
+    width: 100%;
+    height: 100%;
+  }
+  /* ------------------------------------Video ------------------------------ */
+  .media {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+    padding-left: 10px;
+  }
+  iframe {
+    width: 350px;
+    height: 250px;
+  }
+
+  /*---------------------------------- From ------------------------------- */
+  form {
+    width: 340px;
+    max-width: 340px;
+    margin-right: 80px;
+  }
+
+  /*------------------ Footer------------------- */
+
+  .logo img {
+    width: 360px;
+  }
+}
