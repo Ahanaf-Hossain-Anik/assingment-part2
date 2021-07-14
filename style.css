@@ -187,6 +187,12 @@ h3 {
   justify-content: center;
   text-indent: 10px;
 }
+h4{
+  color:#fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 26px;
+}
 form {
   width: 100%;
   max-width: 600px;
