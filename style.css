@@ -233,7 +233,7 @@ button {
   width: 100%;
   max-width: 600px;
   cursor: pointer;
-  margin-left: 20.5px;
+  margin-left: 19px;
 }
 input:focus ~ label,
 input:valid ~ label,
